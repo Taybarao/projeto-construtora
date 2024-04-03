@@ -1,0 +1,430 @@
+body {
+
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 11, 92, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.pagina-principal {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 99%;
+}
+.apresentaçao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+}
+.logo {
+    margin: 50px 50px;
+}
+.titulo-apresentaçao {
+    width: 45%;
+    background: rgb(255, 248, 0);
+    background: linear-gradient(90deg, rgba(255, 248, 0, 0.8323704481792717) 0%, rgba(36, 74, 0, 0.9500175070028011) 50%, rgba(20, 0, 0, 1) 100%);
+    text-align: center;
+    border-radius: 5px;
+    font-size: 36px;
+    height: fit-content;
+    justify-self: end;
+    align-self: flex-end;
+    padding: 10px;
+}
+.texto-apresentaçao {
+    background: rgb(118, 114, 1);
+    background: linear-gradient(90deg, rgba(184, 178, 2, 0.832) 0%, rgba(36, 74, 0, 0.737) 50%, rgba(20, 0, 0, 1) 100%);
+    width: 65%;
+    border-radius: 5px;
+    font-size: 24px;
+    height: fit-content;
+    justify-self: end;
+    margin-top: 10px;
+    padding: 10px;
+
+
+
+
+}
+
+
+
+
+.container-informaçoes {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 95%;
+    color: #ffffff;
+    position: absolute;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: aliceblue;
+    margin-top: 10px;
+}
+
+#slider img {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 3s;
+    object-fit: cover;
+
+
+}
+
+#slider img.selected {
+
+    opacity: 1;
+}
+
+
+.serviços {
+    margin-top: 50px;
+    width: 100%;
+     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+
+}
+
+.titulo-serviços {
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 34px;
+    margin: 10px;
+
+
+}
+
+.lista-serviços {
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 20px;
+}
+
+.item-servico {
+    background: #ffffffb9;
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 18px 19px 29px black;
+  
+}
+
+.img-serviços {
+    padding: 10px;
+}
+
+.titulo-item-servico {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.texto-item-servico {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+.beneficios{
+    display: flex;  
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 500px;
+    margin: 100px 0 ;
+    background-image: url(fotos/pngtree-house-designs-from-sketch-to-reality-exquisite-architectural-drawings-and-3d-picture-image_6300038.jpg);
+  
+}
+
+.texto-beneficios{
+    color: azure;
+    font-size: 24px;
+    letter-spacing: 1px;
+   width: 100%;
+   height: 25%;
+   background-color: rgba(0, 0, 0, 0.82);
+  padding: 20px;
+   box-sizing: border-box;
+
+
+   
+   
+   
+}
+
+.slider-beneficios{
+   
+    width: 60%;
+    height: 500px;
+    overflow: hidden;
+    margin: 10px;
+    box-sizing: border-box; 
+    
+    
+  
+
+ 
+  
+
+}
+
+
+
+input[type=radio] {
+    display: none;
+}
+
+
+.s2, .s3, .s4, .s5{
+    scale: 0.9;
+    box-shadow: 8px 9px 19px black;;
+    transition: 2s;
+    opacity: 10%;
+
+  
+    
+    
+}
+
+#item-m1:checked~.s1{
+    scale: 1;
+}
+
+#item-m2:checked~.s2{
+    scale: 1;
+    opacity: 100%;
+    
+}
+
+#item-m3:checked~.s3{
+    scale: 1;
+    opacity: 100%;
+}
+
+#item-m4:checked~.s4{
+    scale: 1;
+    opacity: 100%;
+}
+
+#item-m5:checked~.s5{
+    scale: 1;
+    opacity: 100%;
+}
+
+
+#item-m2:checked~.s1 {
+margin-top: -500px;
+transition: 2.5s;
+
+
+}
+#item-m3:checked~.s1 {
+    margin-top: -1000px;
+    transition: 2.5s;
+    }
+    #item-m4:checked~.s1 {
+        margin-top: -1500px;
+        transition: 2.5s;
+        }
+        #item-m5:checked~.s1 {
+            margin-top: -2000px;
+            transition: 2.5s;
+            }
+
+
+
+
+
+
+
+
+
+
+
+.item-slide-beneficios{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   background-color: black;
+
+  
+   
+   
+   
+    
+
+}
+
+.s1{
+
+
+    background-image: url(https://www.designi.com.br/images/preview/12474941.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scale: 0.8;
+
+
+}
+
+
+
+.s2{
+
+    background-image: url(https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29uc3RydSVDMyVBNyVDMyVBM298ZW58MHx8MHx8fDA%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.s3{
+
+    background-image: url(https://scontent.fssz10-1.fna.fbcdn.net/v/t39.30808-6/240168875_4242097112552395_8270318455870387314_n.jpg?stp=dst-jpg_s600x600&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFk9a5KnMZWF82DjLLK1_ruXhNjcgWCzi9eE2NyBYLOL8Mmp82C8s-2DLar13htfZu_Tf0KAS84lSc4Fx94EHD8&_nc_ohc=PDYk_t3EarwAX97kkRT&_nc_ht=scontent.fssz10-1.fna&oh=00_AfAlrLTLGQMPksRgm0MUQvP1OCGR4sMzKUEN9cSLk2y9Hw&oe=66126046);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.s4{
+
+    background-image: url(https://img.freepik.com/fotos-premium/uma-foto-de-uma-cidade-com-equipamentos-de-construcao-na-frente-dela_925376-426.jpg?w=740);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.s5{
+
+    background-image: url(https://italicohomes.com/wp-content/uploads/2021/09/1_1-Photo-1-768x432.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+
+
+.container-botoes-beneficions{
+    position: relative;
+ 
+    display: flex;
+    flex-direction: column;
+   
+    width: 25%;
+    margin: 10px;
+
+
+}
+
+.bt-bnf:hover{
+    transform: scale(1.1);
+        transition: 1s;
+}
+
+.bt-bnf{
+ font-size:18px;
+   color: wheat;
+   font-weight: bold;
+    margin: auto;
+    width: 100%;
+    height:30px;
+    text-align: center;
+    padding: 10px 5px;
+    margin: 20px 0;
+background-image: url(https://i.pinimg.com/736x/c1/3a/4f/c13a4fb4b62ceba4e9133e946357bd39.jpg);
+    border-radius: 20px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+
+      
+}
+
+.rodape{
+    width: 100%;
+    height: 100px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/736x/c1/3a/4f/c13a4fb4b62ceba4e9133e946357bd39.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.titulo-rodape{
+
+    margin: 10px;
+
+    width: 20%;
+}
+
+.link-contato{
+    width: fit-content;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+   background-color: rgba(0, 0, 255, 0.183);
+   padding: 5px;
+   border-radius: 5px;
+   border: 1px solid #cccccc42;
+  
+}
+
+.link-contato:hover{
+    background-color: rgba(0, 0, 255, 0.501);
+    scale: 1.1;
+    transition: 1s;
+    border: 1px solid #00000079;
+}
+
+.img-contato{
+    margin-right: 10px;
+}
+
+
+
