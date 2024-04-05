@@ -21,7 +21,10 @@ body {
     height: 550px;
 }
 .logo {
-    margin: 50px 50px;
+    margin: 25px 25px;
+    width: 150px;
+    height: 150px;
+    opacity: 75%;
 }
 .titulo-apresentaçao {
     width: 45%;
@@ -283,7 +286,7 @@ opacity: 10%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-   background-color: black;
+
 
 
   
@@ -297,10 +300,13 @@ opacity: 10%;
 .s1{
 
 
-    background-image: url(https://i.pinimg.com/originals/f5/53/98/f5539898911e020ce0f4d7a596b5ab2a.jpg);
+    background-image: url(fotos/Sem\ título.png);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    opacity: 80%;
+    
+
 
 
 
@@ -494,6 +500,12 @@ transition: .6s;
 
 
 @media screen and (max-width:960px) {
+    .logo{
+        width: 100px;
+        height: 100px;
+        margin: 50px 50px;
+    }
+
     .titulo-apresentaçao{
         font-size: 18px;
     }
@@ -511,6 +523,8 @@ transition: .6s;
 }
 
 @media screen and (max-width:730px) {
+
+ 
     .titulo-apresentaçao{
         width: 60%;
         font-size: 14px;
